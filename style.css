@@ -7,3 +7,165 @@
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    border: 8px solid blue;
+    flex-grow: 1;
+    display: flex;
+    background-color: rgba(20, 25, 34);
+}
+
+footer{
+    border: 8px solid blue;
+    height: 10vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*Sidebar*/
+
+.sidebar{
+    border: 5px solid red;
+    width: 250px;
+    flex-shrink: 0;
+    background-color: black;
+}
+
+.logo{
+    /*border: 3px dashed yellow;*/
+    height: 10%;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+}
+
+.logo img{
+    /*border: 1px double blue;*/
+}
+
+.widget{
+    /*border: 3px dashed yellow;*/
+}
+
+.menu-item{
+    /*border: 3px dashed yellow;*/
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.menu-item:hover{
+    color: white;
+}
+
+.menu-item .icon{
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+    color: rgba(163, 163, 163, 1);
+    font-size: 22px;
+}
+
+.menu-item span{
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(163, 163, 163, 1);
+}
+
+.new{
+    padding: 5px 8px;
+}
+
+.widget__title{
+    padding: 10px 13px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+#big{
+    font-size: 35px;
+}
+
+/*Schermata principale*/
+
+.main-container{
+    border: 5px solid red;
+    flex-grow: 1;
+}
+
+.main-container .due{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Upgrade zone*/
+
+.upgradebar{
+    /*border: 3px dashed yellow;*/
+    height: 10%;
+    padding: 20px;
+    background-color: rgba(20, 25, 34);
+}
+
+.upgradebar button{
+    padding: 8px 30px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(20, 25, 34, 1);
+}
+
+/*Navbar*/
+
+.navbar{
+    /*border: 3px dashed yellow;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.navbar li{
+    text-transform: uppercase;
+    color: grey;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.navbar:first-child{
+    padding-left: 25%;
+}
+
+.navbar:last-child {
+    padding-right: 25%;
+}
+
+.main-container h1{
+    color: white;
+    font-weight: 700;
+    padding: 20px 20px;
+}
+
+.played-wrapper{
+    border: 4px double green;
+    margin: 0 20px;
+}
+/*Debug*/
