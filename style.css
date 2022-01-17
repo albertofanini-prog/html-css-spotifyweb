@@ -31,7 +31,7 @@ ul{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 
 /*Sidebar*/
@@ -119,6 +119,7 @@ img{
     height: 10%;
     padding: 20px;
     background-color: rgba(20, 25, 34);
+    text-align: right;
 }
 
 .upgradebar button{
@@ -165,7 +166,7 @@ img{
 }
 
 .played-wrapper{
-    border: 4px double green;
+    /*border: 4px double green;*/
     margin: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -175,12 +176,13 @@ img{
     /*border: 4px solid yellow;*/
     display: flex;
     flex-direction: column;
-    padding: 0 5px;
+    padding: 0 0px;
+    width: 15%;
 }
 
-.icon img{
-    border: 2px solid blue;
-    display: block;
+.card-header img{/*
+    height: 200px;
+    width: 200px;*/
 }
 
 .card-body h1{
@@ -197,4 +199,5 @@ img{
     text-align: center;
     padding: 10px 0;
 }
+
 /*Debug*/
