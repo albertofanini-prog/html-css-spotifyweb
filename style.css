@@ -158,7 +158,7 @@ img{
     padding-right: 25%;
 }
 
-.main-container h1{
+#title{
     color: white;
     font-weight: 700;
     padding: 20px 20px;
@@ -167,5 +167,34 @@ img{
 .played-wrapper{
     border: 4px double green;
     margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.played-item{
+    /*border: 4px solid yellow;*/
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+
+.icon img{
+    border: 2px solid blue;
+    display: block;
+}
+
+.card-body h1{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card-body span{
+    display: block;
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
 }
 /*Debug*/
