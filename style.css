@@ -23,6 +23,7 @@ main{
 
 footer{
     border: 8px solid blue;
+    background-color: rgba(40, 40, 40, 1);
     height: 10vh;
     width: 100%;
     display: flex;
@@ -48,27 +49,34 @@ img{
     background-color: black;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar :nth-child(2, 3){
+    width: 100%;
+    height: 100%;
 }
 
 .logo{
     /*border: 3px dashed yellow;*/
+    width: 100%;
     height: 10%;
     padding-top: 10px;
     padding-right: 15px;
     padding-left: 15px;
-}
 }
 
 .logo img{
     /*border: 1px double blue;*/
 }
 
-.widget{
+.widget .middle{
     /*border: 3px dashed yellow;*/
 }
 
 #middle{
     flex-grow: 1;
+    width: 100%;
 }
 
 .menu-item{
@@ -97,6 +105,19 @@ img{
     color: rgba(163, 163, 163, 1);
 }
 
+#user{
+    border: 1px solid red;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#user{
+    border: 1px solid red;
+}
+
 #last .user{
     display: flex;
     flex-direction: row;
@@ -104,6 +125,11 @@ img{
 
 .menu-item {
     flex-basis: 50px;
+}
+
+#under{
+    border-bottom: 2px solid silver;
+    margin: 0px 5px;
 }
 
 .menu-item img{
@@ -132,13 +158,13 @@ img{
 #big{
     font-size: 35px;
 }
-
+/*
 .user::after{
     content: "";
     display: block;
     height: 1px;
     color: grey;
-}
+}*/
 
 /*Schermata principale*/
 
@@ -289,27 +315,55 @@ img{
 
 .info-song{
     height: 75px;
-    border: 3px dashed orange;
+    /*border: 3px dashed orange;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.song-name{
+.song-cover img{
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+}
+
+.song-info{
     height: 90%;
-    border: 2px double blue;
+    /*border: 2px double blue;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-info h5{
+    color: white;
+    font-size: 12px;
+    padding: 5px 5px 0px 5px;
+}
+
+.song-info span{
+    color: silver;
+    font-size: 10px;
+    padding: 0px 5px 5px 5px;
+}
+
+.position-song{
+    height: 90%;
+    /*border: 2px double blue;*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.position-song{
-    height: 90%;
-    border: 2px double blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.position-song i{
+    color: silver;
+    padding: 8px;
+}
+
+.position-song i:first-child{
+    padding-left: 50px;
 }
 
 .play-zone{
@@ -327,6 +381,16 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.play-icon i{
+    color: white;
+    padding: 5px 20px;
+}
+
+.play-icon i:nth-child(3){
+    border: 1px solid white;
+    border-radius: 99999px;
 }
 
 .play-time{
@@ -354,4 +418,8 @@ img{
     align-items: center;
 }
 
+.volume i{
+    color: white;
+    padding: 8px;
+}
 /*Debug*/
