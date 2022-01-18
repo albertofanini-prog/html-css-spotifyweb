@@ -11,7 +11,7 @@
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100% - 10vh);
 }
 
 main{
@@ -37,17 +37,21 @@ img{
 /*Sidebar*/
 
 .sidebar{
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     width: 250px;
     flex-shrink: 0;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo{
     /*border: 3px dashed yellow;*/
     height: 10%;
-    padding: 10px 25px;
-    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 }
 
 .logo img{
@@ -56,6 +60,10 @@ img{
 
 .widget{
     /*border: 3px dashed yellow;*/
+}
+
+#middle{
+    flex-grow: 1;
 }
 
 .menu-item{
@@ -84,6 +92,19 @@ img{
     color: rgba(163, 163, 163, 1);
 }
 
+#last .user{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item {
+    flex-basis: 50px;
+}
+
+.menu-item img{
+
+}
+
 .new{
     padding: 5px 8px;
 }
@@ -96,14 +117,28 @@ img{
     color: white;
 }
 
+.user__name{
+    padding: 10px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
 #big{
     font-size: 35px;
+}
+
+.user::after{
+    content: "";
+    display: block;
+    height: 1px;
+    color: grey;
 }
 
 /*Schermata principale*/
 
 .main-container{
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     flex-grow: 1;
 }
 
@@ -116,9 +151,9 @@ img{
 
 .upgradebar{
     /*border: 3px dashed yellow;*/
-    height: 10%;
+    height: 7%;
     padding: 20px;
-    background-color: rgba(20, 25, 34);
+    background-color: rgba(0, 0, 0, 0.2);
     text-align: right;
 }
 
@@ -162,7 +197,15 @@ img{
 #title{
     color: white;
     font-weight: 700;
-    padding: 20px 20px;
+    padding: 10px 20px;
+}
+
+.description{
+    display: block;
+    color: grey;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    font-size: 14px;
 }
 
 .played-wrapper{
@@ -170,6 +213,13 @@ img{
     margin: 0 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.personal-wrapper{
+    margin: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
 }
 
 .played-item{
@@ -189,7 +239,8 @@ img{
     color: white;
     font-size: 16px;
     text-align: center;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 .card-body span{
@@ -198,6 +249,21 @@ img{
     font-size: 12px;
     text-align: center;
     padding: 10px 0;
+}
+
+#last{
+    padding-top: 200px;
+}
+
+.download{
+    width: 100%;
+    border-bottom: 1px solid grey;
+    margin: 0px 5px;
+    padding-bottom: 10px;
+}
+
+.round{
+    border-radius: 50%;
 }
 
 /*Debug*/
