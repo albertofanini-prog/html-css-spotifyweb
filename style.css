@@ -11,7 +11,7 @@
 body{
     display: flex;
     flex-direction: column;
-    height: calc(100% - 10vh);
+    height: 100vh;
 }
 
 main{
@@ -19,6 +19,11 @@ main{
     flex-grow: 1;
     display: flex;
     background-color: rgba(20, 25, 34);
+    height: 90vh;
+}
+
+aside{
+    height: 100%;
 }
 
 footer{
@@ -70,8 +75,9 @@ img{
     /*border: 1px double blue;*/
 }
 
-.widget .middle{
+.widget.middle{
     /*border: 3px dashed yellow;*/
+    flex-grow: 1;
 }
 
 #middle{
@@ -106,16 +112,11 @@ img{
 }
 
 #user{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
-    height: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-#user{
-    border: 1px solid red;
 }
 
 #last .user{
@@ -128,8 +129,11 @@ img{
 }
 
 #under{
+    display: inline;
     border-bottom: 2px solid silver;
     margin: 0px 5px;
+    width: 75%;
+    height: 2px;
 }
 
 .menu-item img{
@@ -170,7 +174,9 @@ img{
 
 .main-container{
     /*border: 5px solid red;*/
+    height: 100%;
     flex-grow: 1;
+    overflow-y: scroll;
 }
 
 .main-container .due{
@@ -182,7 +188,7 @@ img{
 
 .upgradebar{
     /*border: 3px dashed yellow;*/
-    height: 7%;
+    height: 10%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.2);
     text-align: right;
@@ -283,11 +289,6 @@ img{
     font-size: 12px;
     text-align: center;
     padding: 10px 0;
-}
-
-#last{
-
-    padding-top: 200px;
 }
 
 .download{
