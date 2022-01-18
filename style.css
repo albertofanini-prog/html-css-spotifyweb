@@ -24,6 +24,11 @@ main{
 footer{
     border: 8px solid blue;
     height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul{
@@ -194,6 +199,9 @@ img{
     padding-right: 25%;
 }
 
+
+/*Main*/
+
 #title{
     color: white;
     font-weight: 700;
@@ -252,6 +260,7 @@ img{
 }
 
 #last{
+
     padding-top: 200px;
 }
 
@@ -264,6 +273,85 @@ img{
 
 .round{
     border-radius: 50%;
+}
+
+/*Footer - Barra del play*/
+
+/*footer{
+    border: 8px solid blue;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}*/
+
+.info-song{
+    height: 75px;
+    border: 3px dashed orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.song-name{
+    height: 90%;
+    border: 2px double blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position-song{
+    height: 90%;
+    border: 2px double blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-zone{
+    height: 75px;
+    border: 3px dashed orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.play-icon{
+    height: 50%;
+    border: 2px double blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-time{
+    height: 50%;
+    border: 2px double blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sound-zone{
+    height: 75px;
+    border: 3px dashed orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.volume{
+    height: 80%;
+    border: 2px double blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Debug*/
