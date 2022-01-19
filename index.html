@@ -22,21 +22,21 @@
             </div>
             <div class="widget">
                 <ul class="widget__menu">
-                    <li class="menu-item" id="current">
+                    <li class="menu-item active" id="current">
                         <div class="icon">
-                            <i class="fas fa-home"></i>
+                            <a href="#"><img src="img/home.svg"></a>
                         </div>
                         <span>Home</span>
                     </li>
                     <li class="menu-item">
                         <div class="icon">
-                            <i class="fas fa-search"></i>
+                            <a href="#"><img src="img/search.svg" alt=""></a>
                         </div>
                         <span>Cerca</span>
                     </li>
                     <li class="menu-item">
                         <div class="icon">
-                            <i class="fas fa-compact-disc"></i>
+                            <a href="#"><img src="img/libreria.svg" alt=""></a>
                         </div>
                         <span>La tua libreria</span>
                     </li>
@@ -44,13 +44,15 @@
             </div>
             <div class="widget middle">
                 <h3 class="widget__title">Playlist</h3>
-                <ul class="widget__menu">
-                    <li class="menu-item">
+                <div class="newplaylist-btn">
+                    <button class="new-playlist-btn">
                         <div class="icon">
-                            <i class="far fa-plus-square" id="big"></i>
+                            <i class="fas fa-plus"></i> 
                         </div>
                         <span>Crea Playlist</span>
-                    </li>
+                    </button>
+                </div>
+                <ul class="widget__menu">
                     <li class="menu-item">
                         <span class="new">Nome Playlist</span>
                     </li>
@@ -74,8 +76,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="widget" id="last">
-                <ul id="user">
+            <div class="widget">
+                <!--<ul id="user">
                     <li class="menu-item">
                         <div class="icon">
                             <i class="fas fa-arrow-circle-down fa-xs"></i>
@@ -85,21 +87,31 @@
                     <li>
                         <h3 class="user__name">Jhon Doe</h3>
                     </li>
-                </ul>
-            </div>
+                </ul>-->
+                <button class="download-cta">
+                    <i class="fas fa-arrow-circle-down fa-xs"></i> Installa app
+                </button>
+                <div class="profile">
+                    <figure class="profile-pic">
+                        <img src="img/profile.svg" alt="">
+                    </figure>
+
+                    Jhon Doe
+                </div>
+            </div>  
         </aside>
         <section class="main-container">
             <div class="upgradebar">
-                <button>EFFETTUA L'UPGRADE</button>
+                <a href="#"><button>EFFETTUA L'UPGRADE</button></a>
             </div>
             <div>
                 <ul class="navbar">
-                    <li>In evidenza</li>
-                    <li>Podcast</li>
-                    <li>Classifiche</li>
-                    <li>Generi e mood</li>
-                    <li>Nuove uscite</li>
-                    <li>Scopri</li>
+                    <li><a href="#">In evidenza</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Classifiche</a></li>
+                    <li><a href="#">Generi e mood</a></li>
+                    <li><a href="#">Nuove uscite</a></li>
+                    <li><a href="#">Scopri</a></li>
                 </ul>
             </div>
             <h1 id="title">Recently played</h1>
@@ -118,7 +130,7 @@
                         <img src="img/stranger.jpeg"> 
                     </div>
                     <div class="card-body">
-                        <h1>Stranger things, Vol. 1</h1>
+                        <h1>Stranger things, Vol. 1 (a Netfllix Original Series Soundtrack)</h1>
                         <span>Kyle Dixon & Michael Stein</span>
                     </div>
                 </li>
@@ -208,11 +220,11 @@
     <footer>
         <div class="info-song">
             <div class="song-cover">
-                <img src="img/sinister.jpeg" alt="">
+                <img src="img/Bob_Sinclair_III.png" alt="">
             </div>
-            <div class="song-info">
-                <h5>Sinister</h5>
-                <span>Brano nome</span>
+            <div class="id-song">
+                <h5>Bob Sinclair</h5>
+                <span>Kiss my eyes</span>
             </div> 
             <div class="position-song">
                 <i class="far fa-heart"></i>
@@ -220,23 +232,45 @@
             </div>
         </div>
         <div class="play-zone">
-            <div class="play-icon">
+            <div class="player-icon">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-step-backward"></i>
-                <i class="fas fa-play"></i>
+                <i class="fas fa-play-circle"></i>
                 <i class="fas fa-step-forward"></i>
                 <i class="fas fa-redo-alt"></i>
             </div>
-            <div class="play-time">
-                00:00
+            <div class="player-timeline">
+                <span>01:48</span>
+                <div class="timeline__slider">
+                    <div class="timeline__current-time">
+                        <div class="time">
+
+                        </div>
+                    </div>
+                </div>
+                <span>03:51</span>
             </div>
         </div>
         <div class="sound-zone">
-            <div class="volume">
-                <i class="fas fa-list-ul"></i>
-                <i class="fas fa-desktop"></i>
-                <i class="fas fa-volume-up"></i>
-            </div>
+            <ul class="volume">
+                <li>
+                    <i class="fas fa-list-ul"></i>
+                </li>
+                <li>
+                    <i class="fas fa-desktop"></i>
+                </li>
+                <li class="volume-control">
+                    <i class="fas fa-volume-up"></i>
+                    <div class="volume__slider">
+                        <div class="volume__current-volume">
+
+                        </div>
+                        <div class="timeline-control">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
