@@ -44,7 +44,7 @@
             </div>
             <div class="widget middle">
                 <h3 class="widget__title">Playlist</h3>
-                <div class="newplaylist-btn">
+                <div class="newplaylist-box">
                     <button class="new-playlist-btn">
                         <div class="icon">
                             <i class="fas fa-plus"></i> 
@@ -104,21 +104,22 @@
             <div class="upgradebar">
                 <a href="#"><button>EFFETTUA L'UPGRADE</button></a>
             </div>
-            <div>
-                <ul class="navbar">
-                    <li><a href="#">In evidenza</a></li>
-                    <li><a href="#">Podcast</a></li>
-                    <li><a href="#">Classifiche</a></li>
-                    <li><a href="#">Generi e mood</a></li>
-                    <li><a href="#">Nuove uscite</a></li>
-                    <li><a href="#">Scopri</a></li>
+            <div class="navbar-wrapper">
+                <ul class="navbar-list">
+                    <li class="active">In evidenza</li>
+                    <li>Podcast</li>
+                    <li>Classifiche</li>
+                    <li>Generi e mood</li>
+                    <li>Nuove uscite</li>
+                    <li>Scopri</li>
                 </ul>
             </div>
             <h1 id="title">Recently played</h1>
             <ul class="played-wrapper">
                 <li class="played-item">
                     <div class="card-header">
-                        <img src="img/metal_lifting.jpg"> 
+                        <img src="img/metal_lifting.jpg">
+                        <i class="far fa-play-circle"></i>
                     </div>
                     <div class="card-body">
                         <h1>Heavy Metal</h1>
@@ -127,7 +128,8 @@
                 </li>
                 <li class="played-item">
                     <div class="card-header">
-                        <img src="img/stranger.jpeg"> 
+                        <img src="img/stranger.jpeg">
+                        <i class="far fa-play-circle"></i>
                     </div>
                     <div class="card-body">
                         <h1>Stranger things, Vol. 1 (a Netfllix Original Series Soundtrack)</h1>
@@ -136,7 +138,8 @@
                 </li>
                 <li class="played-item">
                     <div class="card-header">
-                        <img src="img/aquietplace.jpeg"> 
+                        <img src="img/aquietplace.jpeg">
+                        <i class="far fa-play-circle"></i>
                     </div>
                     <div class="card-body">
                         <h1>A quiet place</h1>
@@ -145,7 +148,8 @@
                 </li>
                 <li class="played-item">
                     <div class="card-header">
-                        <img src="img/split.jpeg"> 
+                        <img src="img/split.jpeg">
+                        <i class="far fa-play-circle"></i>
                     </div>
                     <div class="card-body">
                         <h1>Split</h1>
@@ -154,7 +158,8 @@
                 </li>
                 <li class="played-item">
                     <div class="card-header">
-                        <img src="img/cure.jpeg"> 
+                        <img src="img/cure.jpeg">
+                        <i class="far fa-play-circle"></i>
                     </div>
                     <div class="card-body">
                         <h1>A cure for wellness</h1>
@@ -163,7 +168,8 @@
                 </li>
                 <li class="played-item">
                     <div class="card-header">
-                        <img src="img/sinister.jpeg"> 
+                        <img src="img/sinister.jpeg">
+                        <i class="far fa-play-circle"></i>
                     </div>
                     <div class="card-body">
                         <h1>Sinister</h1>
@@ -178,7 +184,8 @@
             <ul class="personal-wrapper">
                 <li class="played-item">
                     <div class="card-header">
-                        <img src="img/radar.jpeg"> 
+                        <img src="img/radar.jpeg">
+                        <i class="far fa-play-circle"></i>
                     </div>
                     <div class="card-body">
                         <h1>Release Radar</h1>
@@ -186,7 +193,8 @@
                 </li>
                 <li class="played-item">
                     <div class="card-header">
-                        <img src="img/mixdaily.jpeg"> 
+                        <img src="img/mixdaily.jpeg">
+                        <i class="far fa-play-circle"></i>
                     </div>
                     <div class="card-body">
                         <h1>Daily Mix 1</h1>
@@ -200,7 +208,8 @@
             <ul class="personal-wrapper">
                 <li class="played-item">
                     <div class="card-header">
-                        <img class="round"src="img/youg.jpeg"> 
+                        <img class="round"src="img/youg.jpeg">
+                        <i class="far fa-play-circle"></i>
                     </div>
                     <div class="card-body">
                         <h1>Lana Del Rey</h1>
@@ -208,7 +217,8 @@
                 </li>
                 <li class="played-item">
                     <div class="card-header">
-                        <img class="round" src="img/einaudi.jpeg"> 
+                        <img class="round" src="img/einaudi.jpeg">
+                        <i class="far fa-play-circle"></i> 
                     </div>
                     <div class="card-body">
                         <h1>Ludovico Einaudi</h1>
@@ -227,7 +237,7 @@
                 <span>Kiss my eyes</span>
             </div> 
             <div class="position-song">
-                <i class="far fa-heart"></i>
+                <i class="far fa-heart" id="heart"></i>
                 <i class="far fa-folder"></i>
             </div>
         </div>

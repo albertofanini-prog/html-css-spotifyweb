@@ -1,0 +1,17 @@
+@media screen and (max-width: 878px){
+    body{
+        width: 100%;
+    }
+
+    .played-wrapper{
+        gap: 2%;
+    }
+
+    .played-item{
+        width: calc(95% / 2);
+    }
+
+    .card-body h1{
+        font-size: 18px;
+    }
+}
