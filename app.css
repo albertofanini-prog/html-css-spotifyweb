@@ -1,17 +1,50 @@
-@media screen and (max-width: 878px){
+@media screen and (max-width: 1120px){
     body{
         width: 100%;
     }
 
     .played-wrapper{
-        gap: 2%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        column-gap: 1%;
     }
 
     .played-item{
-        width: calc(95% / 2);
+        width: calc(95% / 5);
     }
 
     .card-body h1{
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 878px){
+    .played-wrapper{
+        column-gap: 2%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .played-item{
+        width: calc(92% / 4);
+    }
+
+    
+    .card-body h1{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 639px){
+    .played-item{
+        column-gap: 5%;
+    }
+
+    .played-item{
+        width: calc(90% / 2);
+    }
+
+    .sound-zone{
+        flex-basis: 125px;
     }
 }
